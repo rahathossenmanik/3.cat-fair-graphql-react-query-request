@@ -4,15 +4,17 @@ import { request } from 'graphql-request';
 
 const COUNTRIES_QUERY = `
 query {
-  countries {
-    code,
-    name
+  books {
+    id,
+    title
   }
 }
 `;
 
 function queryResolver(query: any, variables: any) {
-  return request('https://countries.trevorblades.com/', query, variables);
+  const res = request('http://localhost:6543/graphql', query, variables);
+  console.log(res);
+  return res;
 }
 
 const CountryComponent = () => {
@@ -26,21 +28,7 @@ const CountryComponent = () => {
   if (data) {
     console.log(data);
   }
-  return (
-    <>
-      {data ? (
-        <div>
-          <ol>
-            {data.countries.map((x: any) => (
-              <li key={x.code}>{x.name}</li>
-            ))}
-          </ol>
-        </div>
-      ) : (
-        <div>Waiting for data ... </div>
-      )}
-    </>
-  );
+  return <>{data ? <div>{JSON.stringify(data, null, 2)}</div> : <div>Waiting for data ... </div>}</>;
 };
 
 export default CountryComponent;
