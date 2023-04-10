@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" alt="javascript" width="120" height="120"/></a>
+  <a href="https://graphql.org" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql" width="120" height="120"/></a>
+</p>
+
 # MERN-GraphQL-Frontend
 
 Simple React JS + GraphQL Project
@@ -13,3 +18,7 @@ Simple React JS + GraphQL Project
 [MERN-GraphQL-Backend](https://github.com/rahathossenmanik/mern-graphql-backend)
 
 [GraphQL + REST API](https://github.com/rahathossenmanik/graphql-and-rest-api)
+
+[NEST-CRUD-Backend](https://github.com/rahathossenmanik/nest-crud)
+
+[NEST-TypeORM-Postgre](https://github.com/rahathossenmanik/nest-typeorm-postgre)
